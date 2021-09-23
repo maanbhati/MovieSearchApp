@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Movie.View"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginEnd="@dimen/margin_small"
+    app:cardElevation="@dimen/card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_list_item">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/moviePoster"
+            style="@style/Movie.Image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size"
+            android:contentDescription="@string/movie_image_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_movie_placeholder" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/movieGenre"
+            style="@style/Movie.Genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/moviePoster"
+            app:layout_constraintStart_toStartOf="@+id/moviePoster"
+            app:layout_constraintBottom_toBottomOf="@+id/moviePoster"
+            tools:text="@string/movie_image_genre" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/movieTitle"
+            style="@style/Movie.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/movieGenre"
+            app:layout_constraintTop_toBottomOf="@+id/movieGenre"
+            tools:text="@string/movie_image_genre" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/movieReleaseYear"
+            style="@style/Movie.ReleasedYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movieTitle"
+            android:layout_marginStart="@dimen/normal_padding"
+            app:layout_constraintBaseline_toBaselineOf="@+id/movieTitle"
+            app:layout_constraintStart_toEndOf="@+id/movieTitle"
+            tools:text="@string/str_test_date" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

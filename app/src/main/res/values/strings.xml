@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MovieSearchApp</string>
+    <string name="error">Error</string>
+
+    <!-- Content Description -->
+    <string name="movie_image_desc">Movie Image</string>
+    <string name="movie_image_genre">ABC Movie</string>
+    <string name="str_test_date">20/09/2021</string>
+    <string name="movie_search_hint">Enter keyword to search</string>
+</resources>
