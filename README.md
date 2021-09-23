@@ -15,7 +15,7 @@ The App is using the [Movies Api] to searching movies.
 - [ViewBinding] - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
 - [Glide] - An image loading and caching library for Android focused on smooth scrolling
 - [Mockito] - For Unit testing
-- [Expresso] - For UI intrumentation testing
+- [Expresso] - For UI instrumentation testing
 
    [ViewModel]: <https://developer.android.com/topic/libraries/architecture/viewmodel>
    [Hilt-Dagger]: <https://dagger.dev/hilt/>
