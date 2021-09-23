@@ -26,7 +26,7 @@ class MainActivityTest {
     @Test
     fun test_main_activity_launches_with_containing_fragment_container_with_id() {
         val intent = Intent(ApplicationProvider.getApplicationContext(), MainActivity::class.java)
-            .putExtra("title", "Testing rules!")
+            .putExtra("title", "Movie search Activity!")
         scenario = launchActivity(intent)
         scenario.onActivity { withId(R.id.fragmentContainerView2).matches(isDisplayed()) }
     }
